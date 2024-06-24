@@ -81,7 +81,7 @@
           <ul
             class="whitespace-nowrap group-hover:block hidden p-4 rounded-lg shadow-lg bg-white text-black">
             <li>
-              <a class="py-2 hover:text-[#027828]"  href="https://www.adb.org/projects/41392-023/main" target="_blank">ADB</a>
+              <RouterLink class="py-2 hover:text-[#027828]"  to="https://www.adb.org/projects/41392-023/main" target="_blank">ADB</RouterLink>
             </li>
             <li class="border-t pt-2 mt-2">
               <RouterLink class="py-2 hover:text-[#027828]" :class="[isActive('/about-kvk') ? 'text-[#027828]' : '', 'nav-link']" to="/about-kvk" >គម្រោង ក.វ.ក</RouterLink>
@@ -129,13 +129,13 @@
 
         <ul class="flex flex-col gap-2">
           <li>
-            <RouterLink to="">ទំព័រដើម​</RouterLink>
+            <RouterLink to="/">ទំព័រដើម​</RouterLink>
           </li>
           <li>
-            <RouterLink to="">អំពី ក.វ.ក​</RouterLink>
+            <RouterLink to="/about-kvk">អំពី ក.វ.ក​</RouterLink>
           </li>
           <li>
-            <RouterLink to="">ឯកសារគត្តិយុត្ត</RouterLink>
+            <RouterLink to="/workshop">ឯកសារគត្តិយុត្ត</RouterLink>
           </li>
           <li class="flex flex-col gap-2">
             <div class="flex items-center gap-2">
@@ -166,7 +166,7 @@
 
             <ul class="flex flex-col gap-2 list-disc list-inside">
               <li>
-                <a href="https://www.adb.org/projects/41392-023/main" target="_blank">ADB</a>
+                <RouterLink to="https://www.adb.org/projects/41392-023/main" target="_blank">ADB</RouterLink>
               </li>
             </ul>
           </li>
@@ -177,15 +177,15 @@
         <h1 class="text-xl font-bold">Languages</h1>
 
         <div class="flex items-center gap-4 flex-wrap">
-          <a href="" class="flex items-center gap-4">
+          <RouterLink to="" class="flex items-center gap-4">
             <img src="../../assets/icons/kh-flag.svg" alt="">
             <span>ភាសាខ្មែរ</span>
-          </a>
+          </RouterLink>
 
-          <a href="" class="flex items-center gap-4">
+          <RouterLink to="" class="flex items-center gap-4">
             <img src="../../assets/icons/en-flag.svg" alt="">
             <span>English</span>
-          </a>
+          </RouterLink>
         </div>
       </div>
 
@@ -193,20 +193,20 @@
         <h1 class="text-xl font-bold">Get in Touch</h1>
 
         <div class="flex items-center gap-4 flex-wrap">
-          <a href="" class="flex items-center gap-2">
+          <RouterLink to="" class="flex items-center gap-2">
             <img src="../../assets/icons/email.svg" alt="">
             <span>snif@gmail.com</span>
-          </a>
+          </RouterLink>
 
-          <a href="" class="flex items-center gap-2">
+          <RouterLink to="" class="flex items-center gap-2">
             <img src="../../assets/icons/phone.svg" alt="">
             <span>+855 888 999</span>
-          </a>
+          </RouterLink>
 
-          <a href="" class="flex items-center gap-2">
+          <RouterLink to="" class="flex items-center gap-2">
             <img src="../../assets/icons/fb.svg" alt="">
             <span>https//facebook.com</span>
-          </a>
+          </RouterLink>
         </div>
       </div>
 
@@ -221,8 +221,8 @@ import { useRoute } from 'vue-router';
 const isOpen = ref(false)
 const route = useRoute();
 
-function isActive(href: string) {
-  return route.path === href;
+function isActive(to: string) {
+  return route.path === to;
 }
 
 function wp_nav_menu() { }

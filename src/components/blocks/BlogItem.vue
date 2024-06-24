@@ -19,7 +19,7 @@
         ដែលប្រព្រឹត្តទៅនៅថ្ងៃទី១២ ខែកញ្ញា ឆ្នាំ២០២៣ នៅសណ្ឋាគារភ្នំពេញ។
       </p>
 
-      <a href="#" class="text-sm text-slate-600">អាន​បន្ថែម</a>
+      <RouterLink to="#" class="text-sm text-slate-600">អាន​បន្ថែម</RouterLink>
     </div>
   </div>
 </template>

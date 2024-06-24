@@ -5,7 +5,7 @@
     <section class="max-w-screen-lg mx-auto mt-20 flex flex-col gap-10">
           <ul class="flex border-b">
             <li class="-mb-px mr-1">
-              <a class="bg-white inline-block py-2 px-4 text-blue-700 font-semibold" :class="currentTab === 0? 'border-l border-t border-r rounded-t': 'hover:text-blue-800'" @click="currentTab = 0">
+              <RouterLink to="" class="bg-white inline-block py-2 px-4 text-blue-700 font-semibold" :class="currentTab === 0? 'border-l border-t border-r rounded-t': 'hover:text-blue-800'" @click="currentTab = 0">
                 <TheHeading title="គម្រោង ក.វ.ក">
                   <template #icon>
                     <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 1024 1024">
@@ -14,10 +14,10 @@
                     </svg>
                   </template>
                 </TheHeading>
-              </a>
+              </RouterLink>
             </li>
             <li class="-mb-px mr-1">
-              <a class="bg-white inline-block py-2 px-4 text-blue-500  font-semibold" :class=" currentTab === 1? 'border-l border-t border-r rounded-t': 'hover:text-blue-800'" @click="currentTab = 1">
+              <RouterLink to="" class="bg-white inline-block py-2 px-4 text-blue-500  font-semibold" :class=" currentTab === 1? 'border-l border-t border-r rounded-t': 'hover:text-blue-800'" @click="currentTab = 1">
                 <TheHeading title="គម្រោង ADB">
                   <template #icon>
                     <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 1024 1024">
@@ -26,7 +26,7 @@
                     </svg>
                   </template>
                 </TheHeading>
-              </a>
+              </RouterLink>
             </li>
            
           </ul>
