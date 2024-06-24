@@ -15,6 +15,6 @@ export default defineConfig({
     }
   },
   server: {
-    origin: 'https://socheatit1995.github.io/snif/'
+    origin: 'https://socheatit1995.github.io/snif'
   },
 })
