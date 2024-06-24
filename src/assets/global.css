@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    scrollbar-width: thin;
+  }
+
+  body {
+    @apply text-base text-black;
+  }
+  .bg-primary-800 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(1 120 39 / var(--tw-bg-opacity));
+  }
+}
