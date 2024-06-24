@@ -14,5 +14,8 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   },
+  server: {
+    origin: 'https://socheatit1995.github.io/snif/'
+  },
   publicDir: "/snif/src/"
 })
